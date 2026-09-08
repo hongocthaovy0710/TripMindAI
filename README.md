@@ -14,6 +14,7 @@ theo từng ngày kèm ước tính chi phí.
 | Thông tin | Chi tiết |
 |-----------|----------|
 | **Tên dự án** | TripMind AI |
+| **Môn học** | Chuyên đề 4: AI Product Development |
 | **Loại sản phẩm** | Ứng dụng web (responsive) |
 | **Lĩnh vực** | Du lịch + Trí tuệ nhân tạo (AI) |
 | **Giai đoạn hiện tại** | Phân tích & Đặc tả yêu cầu (Discovery & Specification) |
@@ -42,6 +43,24 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 | 3.3 | **Phân tích Yêu cầu** (Requirements Analysis) | Use case, mô hình dữ liệu, quy tắc nghiệp vụ | [📄 Xem](./docs/3.3-requirements-analysis.md) |
 | 3.4 | **User Stories & Tiêu chí Chấp nhận** | Câu chuyện người dùng theo Agile + Given-When-Then | [📄 Xem](./docs/3.4-user-stories-acceptance-criteria.md) |
 | 3.5 | **Đặc tả Tính năng** (Feature Specification) | Đặc tả chi tiết từng tính năng, luồng xử lý, kiến trúc | [📄 Xem](./docs/3.5-feature-specification.md) |
+| 3.6 | **Kiến trúc & Công nghệ** (Technical Architecture) | Tech stack, phân tầng kiến trúc, API, tích hợp AI, mô hình dữ liệu | [📄 Xem](./docs/3.6-technical-architecture.md) |
+
+---
+
+## 🛠️ Công nghệ sử dụng (Tech Stack)
+
+| Tầng | Công nghệ |
+|------|-----------|
+| **Frontend** | React + Next.js, TypeScript, Tailwind CSS |
+| **Backend** | Node.js + Express (REST API) |
+| **Cơ sở dữ liệu** | PostgreSQL (dữ liệu quan hệ) + Redis (cache) |
+| **AI / LLM** | OpenAI GPT-4 API / Anthropic Claude API (sinh lịch trình) |
+| **Xác thực** | JWT (JSON Web Token) + bcrypt |
+| **API bên thứ ba** | Google Maps API, OpenWeather API, Unsplash API |
+| **Triển khai** | Vercel (frontend) + Render/Railway (backend), Docker |
+
+> Chi tiết đầy đủ về kiến trúc, luồng gọi API và tích hợp AI xem tại
+> [3.6 - Kiến trúc & Công nghệ](./docs/3.6-technical-architecture.md).
 
 ---
 
@@ -73,7 +92,8 @@ TripMindAI/
     ├── 3.2-prd.md                               # Tài liệu yêu cầu sản phẩm
     ├── 3.3-requirements-analysis.md             # Phân tích yêu cầu
     ├── 3.4-user-stories-acceptance-criteria.md  # User stories & tiêu chí chấp nhận
-    └── 3.5-feature-specification.md             # Đặc tả tính năng
+    ├── 3.5-feature-specification.md             # Đặc tả tính năng
+    └── 3.6-technical-architecture.md            # Kiến trúc & công nghệ
 ```
 
 ---
@@ -82,8 +102,8 @@ TripMindAI/
 
 | Giai đoạn | Nội dung | Trạng thái |
 |-----------|----------|------------|
-| **Discovery & Specification** | Tài liệu 3.1 → 3.5 | ✅ Hoàn thành |
-| **Thiết kế (Design)** | Wireframe, UI/UX, thiết kế hệ thống | 🔜 Sắp tới |
+| **Discovery & Specification** | Tài liệu 3.1 → 3.6 | ✅ Hoàn thành |
+| **Thiết kế (Design)** | Wireframe, UI/UX chi tiết, mockup | 🔜 Sắp tới |
 | **Phát triển MVP** | Tài khoản + Tạo lịch trình AI + Quản lý chuyến đi | ⏳ Kế hoạch |
 | **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
 
@@ -92,7 +112,7 @@ TripMindAI/
 ## 👤 Tác giả
 
 - **Sinh viên thực hiện:** Hồ Ngọc Thảo Vy
-- **Môn học / Dự án:** Phân tích & Thiết kế sản phẩm
+- **Môn học:** Chuyên đề 4: AI Product Development
 
 ---
 
