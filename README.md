@@ -49,12 +49,18 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 
 ### Chương 4 — AI trong Thiết kế Sản phẩm
 
+> Tính năng minh hoạ cho Chương 4: **Activity Priority System** — hệ thống độ ưu tiên
+> (High/Medium/Low) cho các hoạt động trong lịch trình. Thể hiện đầy đủ quy trình:
+> PRD → User Flow → Wireframe → Prototype → AI Design Review → Human Decision →
+> Validation → Final Iteration.
+
 | # | Tài liệu | Mô tả | Liên kết |
 |---|----------|-------|----------|
-| 4.1 | **Luồng Người dùng** (User Flow) | Sơ đồ luồng người dùng qua các màn hình (Mermaid) | [📄 Xem](./docs/4.1-user-flow.md) |
-| 4.2 | **Bố cục Khung** (Wireframing) | Wireframe low-fidelity các màn hình chính | [📄 Xem](./docs/4.2-wireframing.md) |
-| 4.3 | **Tạo Bản mẫu** (Prototyping) | Liên kết màn hình, kịch bản demo, trạng thái tương tác | [📄 Xem](./docs/4.3-prototyping.md) |
-| 4.4 | **AI Đánh giá Thiết kế** (AI Design Review) | Dùng AI đánh giá thiết kế + đề xuất cải thiện | [📄 Xem](./docs/4.4-ai-design-review.md) |
+| — | **Prompt bài thực hành** | Prompt đã viết lại cho TripMind AI | [📄 Xem](./docs/chapter4-prompt.md) |
+| 4.1 | **Luồng Người dùng** (User Flow) | Flow đổi/lọc/thêm Priority + alternative flow + review | [📄 Xem](./docs/4.1-user-flow.md) |
+| 4.2 | **Bố cục Khung** (Wireframing) | Wireframe 4 màn hình + khảo sát 2 layout Priority | [📄 Xem](./docs/4.2-wireframing.md) |
+| 4.3 | **Tạo Bản mẫu** (Prototyping) | 5 interaction + failure paths + demo minh hoạ | [📄 Xem](./docs/4.3-prototyping.md) |
+| 4.4 | **AI Đánh giá Thiết kế** (AI Design Review) | Review P0/P1/P2 + Human Decision + Validation + Final Iteration | [📄 Xem](./docs/4.4-ai-design-review.md) |
 
 ---
 
