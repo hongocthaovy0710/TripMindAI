@@ -36,6 +36,8 @@ chi phí và cho phép quản lý các chuyến đi — tất cả trong một �
 
 Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư mục [`docs/`](./docs):
 
+### Chương 3 — Phân tích & Đặc tả yêu cầu
+
 | # | Tài liệu | Mô tả | Liên kết |
 |---|----------|-------|----------|
 | 3.1 | **Khám phá Sản phẩm** (Product Discovery) | Tầm nhìn, vấn đề, người dùng mục tiêu, phân tích đối thủ | [📄 Xem](./docs/3.1-product-discovery.md) |
@@ -44,6 +46,15 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 | 3.4 | **User Stories & Tiêu chí Chấp nhận** | Câu chuyện người dùng theo Agile + Given-When-Then | [📄 Xem](./docs/3.4-user-stories-acceptance-criteria.md) |
 | 3.5 | **Đặc tả Tính năng** (Feature Specification) | Đặc tả chi tiết từng tính năng, luồng xử lý, kiến trúc | [📄 Xem](./docs/3.5-feature-specification.md) |
 | 3.6 | **Kiến trúc & Công nghệ** (Technical Architecture) | Tech stack, phân tầng kiến trúc, API, tích hợp AI, mô hình dữ liệu | [📄 Xem](./docs/3.6-technical-architecture.md) |
+
+### Chương 4 — AI trong Thiết kế Sản phẩm
+
+| # | Tài liệu | Mô tả | Liên kết |
+|---|----------|-------|----------|
+| 4.1 | **Luồng Người dùng** (User Flow) | Sơ đồ luồng người dùng qua các màn hình (Mermaid) | [📄 Xem](./docs/4.1-user-flow.md) |
+| 4.2 | **Bố cục Khung** (Wireframing) | Wireframe low-fidelity các màn hình chính | [📄 Xem](./docs/4.2-wireframing.md) |
+| 4.3 | **Tạo Bản mẫu** (Prototyping) | Liên kết màn hình, kịch bản demo, trạng thái tương tác | [📄 Xem](./docs/4.3-prototyping.md) |
+| 4.4 | **AI Đánh giá Thiết kế** (AI Design Review) | Dùng AI đánh giá thiết kế + đề xuất cải thiện | [📄 Xem](./docs/4.4-ai-design-review.md) |
 
 ---
 
@@ -93,7 +104,11 @@ TripMindAI/
     ├── 3.3-requirements-analysis.md             # Phân tích yêu cầu
     ├── 3.4-user-stories-acceptance-criteria.md  # User stories & tiêu chí chấp nhận
     ├── 3.5-feature-specification.md             # Đặc tả tính năng
-    └── 3.6-technical-architecture.md            # Kiến trúc & công nghệ
+    ├── 3.6-technical-architecture.md            # Kiến trúc & công nghệ
+    ├── 4.1-user-flow.md                         # Luồng người dùng
+    ├── 4.2-wireframing.md                       # Bố cục khung (wireframe)
+    ├── 4.3-prototyping.md                       # Tạo bản mẫu (prototype)
+    └── 4.4-ai-design-review.md                  # AI đánh giá thiết kế
 ```
 
 ---
@@ -102,8 +117,8 @@ TripMindAI/
 
 | Giai đoạn | Nội dung | Trạng thái |
 |-----------|----------|------------|
-| **Discovery & Specification** | Tài liệu 3.1 → 3.6 | ✅ Hoàn thành |
-| **Thiết kế (Design)** | Wireframe, UI/UX chi tiết, mockup | 🔜 Sắp tới |
+| **Ch.3 – Discovery & Specification** | Tài liệu 3.1 → 3.6 | ✅ Hoàn thành |
+| **Ch.4 – AI trong Thiết kế** | User Flow, Wireframe, Prototype, AI Review (4.1 → 4.4) | ✅ Hoàn thành |
 | **Phát triển MVP** | Tài khoản + Tạo lịch trình AI + Quản lý chuyến đi | ⏳ Kế hoạch |
 | **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
 
