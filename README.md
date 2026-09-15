@@ -56,7 +56,6 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 
 | # | Tài liệu | Mô tả | Liên kết |
 |---|----------|-------|----------|
-| — | **Prompt bài thực hành** | Prompt đã viết lại cho TripMind AI | [📄 Xem](./docs/chapter4-prompt.md) |
 | 4.1 | **Luồng Người dùng** (User Flow) | Flow đổi/lọc/thêm Priority + alternative flow + review | [📄 Xem](./docs/4.1-user-flow.md) |
 | 4.2 | **Bố cục Khung** (Wireframing) | Wireframe 4 màn hình + khảo sát 2 layout Priority | [📄 Xem](./docs/4.2-wireframing.md) |
 | 4.3 | **Tạo Bản mẫu** (Prototyping) | 5 interaction + failure paths + demo minh hoạ | [📄 Xem](./docs/4.3-prototyping.md) |
