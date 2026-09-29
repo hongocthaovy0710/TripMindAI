@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 .venv/
-apps/api/tripmind.db
+*.db
 apps/api/server.log
 
 # Node
