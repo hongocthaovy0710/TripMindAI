@@ -61,6 +61,20 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 | 4.3 | **Tạo Bản mẫu** (Prototyping) | 5 interaction + failure paths + demo minh hoạ | [📄 Xem](./docs/4.3-prototyping.md) |
 | 4.4 | **AI Đánh giá Thiết kế** (AI Design Review) | Review P0/P1/P2 + Human Decision + Validation + Final Iteration | [📄 Xem](./docs/4.4-ai-design-review.md) |
 
+### Chương 5 — Thiết kế Kiến trúc & Hệ thống
+
+> Thiết kế kỹ thuật cho toàn hệ thống TripMind AI (chi tiết + code mẫu: SQL, API spec,
+> design pattern), nhất quán với Chương 3 & 4.
+
+| # | Tài liệu | Mô tả | Liên kết |
+|---|----------|-------|----------|
+| 5.1 | **Thiết kế Kiến trúc** (Architecture Design) | Phân rã thành phần, data flow, ADR, quality attributes | [📄 Xem](./docs/5.1-architecture-design.md) |
+| 5.2 | **Các Mô hình Kiến trúc** (Architecture Patterns) | So sánh & chọn pattern, layered, gateway, cache-aside | [📄 Xem](./docs/5.2-architecture-patterns.md) |
+| 5.3 | **Mô hình hóa Hệ thống & UML** | Use Case, Class, Sequence, Activity, State diagram | [📄 Xem](./docs/5.3-system-modeling-uml.md) |
+| 5.4 | **Thiết kế Cơ sở Dữ liệu** (Database Design) | ERD, SQL DDL, index, chuẩn hóa 3NF, migration | [📄 Xem](./docs/5.4-database-design.md) |
+| 5.5 | **Thiết kế API** (API Design) | Quy ước REST, endpoint, request/response, lỗi, JWT | [📄 Xem](./docs/5.5-api-design.md) |
+| 5.6 | **Mô hình Thiết kế** (Design Patterns) | Adapter, Repository, Factory, Strategy, Singleton (code TS) | [📄 Xem](./docs/5.6-design-patterns.md) |
+
 ---
 
 ## 🛠️ Công nghệ sử dụng (Tech Stack)
@@ -113,7 +127,13 @@ TripMindAI/
     ├── 4.1-user-flow.md                         # Luồng người dùng
     ├── 4.2-wireframing.md                       # Bố cục khung (wireframe)
     ├── 4.3-prototyping.md                       # Tạo bản mẫu (prototype)
-    └── 4.4-ai-design-review.md                  # AI đánh giá thiết kế
+    ├── 4.4-ai-design-review.md                  # AI đánh giá thiết kế
+    ├── 5.1-architecture-design.md               # Thiết kế kiến trúc
+    ├── 5.2-architecture-patterns.md             # Các mô hình kiến trúc
+    ├── 5.3-system-modeling-uml.md               # Mô hình hóa hệ thống & UML
+    ├── 5.4-database-design.md                   # Thiết kế cơ sở dữ liệu
+    ├── 5.5-api-design.md                        # Thiết kế API
+    └── 5.6-design-patterns.md                   # Mô hình thiết kế
 ```
 
 ---
@@ -124,6 +144,7 @@ TripMindAI/
 |-----------|----------|------------|
 | **Ch.3 – Discovery & Specification** | Tài liệu 3.1 → 3.6 | ✅ Hoàn thành |
 | **Ch.4 – AI trong Thiết kế** | User Flow, Wireframe, Prototype, AI Review (4.1 → 4.4) | ✅ Hoàn thành |
+| **Ch.5 – Thiết kế Kiến trúc & Hệ thống** | Kiến trúc, patterns, UML, database, API, design patterns (5.1 → 5.6) | ✅ Hoàn thành |
 | **Phát triển MVP** | Tài khoản + Tạo lịch trình AI + Quản lý chuyến đi | ⏳ Kế hoạch |
 | **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
 
