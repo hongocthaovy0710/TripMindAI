@@ -75,6 +75,21 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 | 5.5 | **Thiết kế API** (API Design) | Quy ước REST, endpoint, request/response, lỗi, JWT | [📄 Xem](./docs/5.5-api-design.md) |
 | 5.6 | **Mô hình Thiết kế** (Design Patterns) | Adapter, Repository, Factory, Strategy, Singleton (code TS) | [📄 Xem](./docs/5.6-design-patterns.md) |
 
+### Chương 6 — Lập trình cùng AI
+
+> Giai đoạn **code ra sản phẩm thật**. Có **app full-stack chạy được** trong [`apps/`](./apps)
+> (FastAPI + React), hiện thực hóa thiết kế Chương 5 và tính năng Activity Priority (Chương 4).
+
+| # | Tài liệu | Mô tả | Liên kết |
+|---|----------|-------|----------|
+| 6.1 | **AI Sinh Mã nguồn** (Code Generation) | Sinh backend/frontend từ thiết kế, prompt + kiểm chứng | [📄 Xem](./docs/6.1-ai-code-generation.md) |
+| 6.2 | **AI Hoàn thành Mã** (Code Completion) | Completion theo ngữ cảnh, ví dụ thật, giới hạn | [📄 Xem](./docs/6.2-ai-code-completion.md) |
+| 6.3 | **AI Sửa lỗi** (Debugging) | 2 bug thật (email-validator, bcrypt) + quy trình debug | [📄 Xem](./docs/6.3-ai-debugging.md) |
+| 6.4 | **Lập trình Cặp cùng AI** (Pair Programming) | Driver/Navigator, phiên pair thật, nguyên tắc | [📄 Xem](./docs/6.4-ai-pair-programming.md) |
+| 6.5 | **Quy trình Lập trình cùng AI** | Vòng lặp end-to-end, checkpoint con người | [📄 Xem](./docs/6.5-ai-development-workflow.md) |
+
+> 💻 **Chạy thử app:** xem hướng dẫn tại [`apps/README.md`](./apps/README.md).
+
 ---
 
 ## 🛠️ Công nghệ sử dụng (Tech Stack)
@@ -117,6 +132,9 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 ```
 TripMindAI/
 ├── README.md                                    # Tài liệu tổng quan (file này)
+├── apps/                                        # 💻 App full-stack chạy được (Chương 6)
+│   ├── api/                                     # Backend FastAPI + SQLite
+│   └── web/                                     # Frontend React + Vite
 └── docs/
     ├── 3.1-product-discovery.md                 # Khám phá sản phẩm
     ├── 3.2-prd.md                               # Tài liệu yêu cầu sản phẩm
@@ -134,6 +152,11 @@ TripMindAI/
     ├── 5.4-database-design.md                   # Thiết kế cơ sở dữ liệu
     ├── 5.5-api-design.md                        # Thiết kế API
     └── 5.6-design-patterns.md                   # Mô hình thiết kế
+    ├── 6.1-ai-code-generation.md                # AI sinh mã nguồn
+    ├── 6.2-ai-code-completion.md                # AI hoàn thành mã
+    ├── 6.3-ai-debugging.md                      # AI sửa lỗi
+    ├── 6.4-ai-pair-programming.md               # Lập trình cặp cùng AI
+    └── 6.5-ai-development-workflow.md           # Quy trình lập trình cùng AI
 ```
 
 ---
@@ -145,7 +168,7 @@ TripMindAI/
 | **Ch.3 – Discovery & Specification** | Tài liệu 3.1 → 3.6 | ✅ Hoàn thành |
 | **Ch.4 – AI trong Thiết kế** | User Flow, Wireframe, Prototype, AI Review (4.1 → 4.4) | ✅ Hoàn thành |
 | **Ch.5 – Thiết kế Kiến trúc & Hệ thống** | Kiến trúc, patterns, UML, database, API, design patterns (5.1 → 5.6) | ✅ Hoàn thành |
-| **Phát triển MVP** | Tài khoản + Tạo lịch trình AI + Quản lý chuyến đi | ⏳ Kế hoạch |
+| **Ch.6 – Lập trình cùng AI** | App full-stack (FastAPI + React) + tài liệu 6.1 → 6.5 | ✅ Hoàn thành |
 | **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
 
 ---
