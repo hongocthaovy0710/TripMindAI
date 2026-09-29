@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+apps/api/tripmind.db
+apps/api/server.log
+
+# Node
+node_modules/
+apps/web/dist/
+
+# Env & secrets
+.env
+*.local
