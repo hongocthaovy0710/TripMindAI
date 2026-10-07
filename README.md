@@ -90,6 +90,19 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 
 > 💻 **Chạy thử app:** xem hướng dẫn tại [`apps/README.md`](./apps/README.md).
 
+### Chương 7 — Tái cấu trúc & Review Mã nguồn cùng AI
+
+> Giai đoạn **nâng cao chất lượng mã nguồn**. AI đóng vai trò kiểm tra chất lượng,
+> phát hiện code smells, hỗ trợ tái cấu trúc và thực hiện code review — dựa trên
+> codebase thật từ Chương 6.
+
+| # | Tài liệu | Mô tả | Liên kết |
+|---|----------|-------|----------|
+| 7.1 | **AI cho Chất lượng Mã nguồn** (Code Quality) | Đánh giá 4 chiều: Readability, Maintainability, Reliability, Security | [📄 Xem](./docs/7.1-ai-code-quality.md) |
+| 7.2 | **Tái cấu trúc có AI Hỗ trợ** (Refactoring) | 3 refactoring thật + quy trình + kiểm chứng | [📄 Xem](./docs/7.2-ai-refactoring.md) |
+| 7.3 | **AI Phát hiện Code Smells** | 10 smells phân loại theo Martin Fowler, mức độ ưu tiên | [📄 Xem](./docs/7.3-ai-code-smells.md) |
+| 7.4 | **Review Mã nguồn bằng AI** (AI Code Review) | 2 phiên review thật + so sánh AI vs Human review | [📄 Xem](./docs/7.4-ai-code-review.md) |
+
 ---
 
 ## 🛠️ Công nghệ sử dụng (Tech Stack)
@@ -169,6 +182,7 @@ TripMindAI/
 | **Ch.4 – AI trong Thiết kế** | User Flow, Wireframe, Prototype, AI Review (4.1 → 4.4) | ✅ Hoàn thành |
 | **Ch.5 – Thiết kế Kiến trúc & Hệ thống** | Kiến trúc, patterns, UML, database, API, design patterns (5.1 → 5.6) | ✅ Hoàn thành |
 | **Ch.6 – Lập trình cùng AI** | App full-stack (FastAPI + React) + tài liệu 6.1 → 6.5 | ✅ Hoàn thành |
+| **Ch.7 – Tái cấu trúc & Review cùng AI** | Code quality, refactoring, code smells, code review (7.1 → 7.4) | ✅ Hoàn thành |
 | **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
 
 ---
