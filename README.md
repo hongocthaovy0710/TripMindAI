@@ -103,6 +103,20 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 | 7.3 | **AI Phát hiện Code Smells** | 10 smells phân loại theo Martin Fowler, mức độ ưu tiên | [📄 Xem](./docs/7.3-ai-code-smells.md) |
 | 7.4 | **Review Mã nguồn bằng AI** (AI Code Review) | 2 phiên review thật + so sánh AI vs Human review | [📄 Xem](./docs/7.4-ai-code-review.md) |
 
+### Chương 8 — AI trong Kiểm thử Phần mềm
+
+> Giai đoạn **đảm bảo chất lượng & tự động hóa kiểm thử**. Ứng dụng AI để thiết kế ma trận
+> kiểm thử chuẩn ISTQB, tự động sinh test cases và thiết lập pipeline CI cho toàn bộ ứng dụng.
+> Bộ kiểm thử chạy thật bằng `pytest` trong [`apps/api/tests/`](./apps/api/tests/).
+
+| # | Tài liệu | Mô tả | Liên kết |
+|---|----------|-------|----------|
+| 8.1 | **Kiểm thử Đơn vị** (Unit Testing) | Unit test auth (bcrypt/JWT), ai_service (thuật toán sinh lịch trình), models validation | [📄 Xem](./docs/8.1-unit-testing.md) |
+| 8.2 | **Kiểm thử Tích hợp** (Integration Testing) | Tích hợp Router + DB SQLite, vòng đời chuyến đi, kiểm tra cô lập quyền sở hữu (Ownership) | [📄 Xem](./docs/8.2-integration-testing.md) |
+| 8.3 | **Kiểm thử Hệ thống** (System Testing) | E2E traveler journey, kiểm thử bảo mật (tampered token, SQLi), độ trễ SLA (< 500ms) | [📄 Xem](./docs/8.3-system-testing.md) |
+| 8.4 | **Tự động hóa Kiểm thử** (Test Automation) | Test runner tự động `run_tests.py`, tích hợp GitHub Actions CI, Quality Gate | [📄 Xem](./docs/8.4-test-automation.md) |
+| 8.5 | **Thiết kế Bài kiểm thử** (Test Design) | Kỹ thuật BVA, Phân vùng tương đương EP, Bảng quyết định Decision Table | [📄 Xem](./docs/8.5-test-design.md) |
+
 ---
 
 ## 🛠️ Công nghệ sử dụng (Tech Stack)
@@ -144,9 +158,19 @@ Toàn bộ tài liệu phân tích và đặc tả sản phẩm nằm trong thư
 
 ```
 TripMindAI/
+├── .github/workflows/test.yml                   # CI/CD tự động hóa kiểm thử (Chương 8.4)
 ├── README.md                                    # Tài liệu tổng quan (file này)
 ├── apps/                                        # 💻 App full-stack chạy được (Chương 6)
 │   ├── api/                                     # Backend FastAPI + SQLite
+│   │   ├── pytest.ini                           # Cấu hình kiểm thử pytest
+│   │   ├── run_tests.py                         # Test runner tự động (Chương 8.4)
+│   │   ├── tests/                               # 🧪 Bộ kiểm thử phần mềm (Chương 8)
+│   │   │   ├── conftest.py                      # Fixtures môi trường DB cô lập
+│   │   │   ├── test_unit.py                     # 8.1 Kiểm thử đơn vị
+│   │   │   ├── test_integration.py              # 8.2 Kiểm thử tích hợp
+│   │   │   ├── test_system.py                   # 8.3 Kiểm thử hệ thống & E2E
+│   │   │   └── test_design_matrix.py            # 8.5 Ma trận thiết kế BVA/EP
+│   │   └── tripmind/                            # Mã nguồn API & AI Service
 │   └── web/                                     # Frontend React + Vite
 └── docs/
     ├── 3.1-product-discovery.md                 # Khám phá sản phẩm
@@ -164,12 +188,21 @@ TripMindAI/
     ├── 5.3-system-modeling-uml.md               # Mô hình hóa hệ thống & UML
     ├── 5.4-database-design.md                   # Thiết kế cơ sở dữ liệu
     ├── 5.5-api-design.md                        # Thiết kế API
-    └── 5.6-design-patterns.md                   # Mô hình thiết kế
+    ├── 5.6-design-patterns.md                   # Mô hình thiết kế
     ├── 6.1-ai-code-generation.md                # AI sinh mã nguồn
     ├── 6.2-ai-code-completion.md                # AI hoàn thành mã
     ├── 6.3-ai-debugging.md                      # AI sửa lỗi
     ├── 6.4-ai-pair-programming.md               # Lập trình cặp cùng AI
-    └── 6.5-ai-development-workflow.md           # Quy trình lập trình cùng AI
+    ├── 6.5-ai-development-workflow.md           # Quy trình lập trình cùng AI
+    ├── 7.1-ai-code-quality.md                   # AI cho chất lượng mã nguồn
+    ├── 7.2-ai-refactoring.md                    # Tái cấu trúc có AI hỗ trợ
+    ├── 7.3-ai-code-smells.md                    # AI phát hiện code smells
+    ├── 7.4-ai-code-review.md                    # Review mã nguồn bằng AI
+    ├── 8.1-unit-testing.md                      # 8.1 Kiểm thử đơn vị
+    ├── 8.2-integration-testing.md               # 8.2 Kiểm thử tích hợp
+    ├── 8.3-system-testing.md                    # 8.3 Kiểm thử hệ thống
+    ├── 8.4-test-automation.md                   # 8.4 Tự động hóa kiểm thử
+    └── 8.5-test-design.md                       # 8.5 Thiết kế bài kiểm thử
 ```
 
 ---
@@ -183,7 +216,8 @@ TripMindAI/
 | **Ch.5 – Thiết kế Kiến trúc & Hệ thống** | Kiến trúc, patterns, UML, database, API, design patterns (5.1 → 5.6) | ✅ Hoàn thành |
 | **Ch.6 – Lập trình cùng AI** | App full-stack (FastAPI + React) + tài liệu 6.1 → 6.5 | ✅ Hoàn thành |
 | **Ch.7 – Tái cấu trúc & Review cùng AI** | Code quality, refactoring, code smells, code review (7.1 → 7.4) | ✅ Hoàn thành |
-| **Kiểm thử & Phát hành** | Kiểm thử, triển khai | ⏳ Kế hoạch |
+| **Ch.8 – AI trong Kiểm thử Phần mềm** | Unit, Integration, System, Automation, Test Design (8.1 → 8.5) + Test Suite pytest | ✅ Hoàn thành |
+| **Triển khai & Phát hành** | Đóng gói Docker, triển khai Cloud | ⏳ Kế hoạch |
 
 ---
 

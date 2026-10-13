@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .venv/
 *.db
+.pytest_cache/
 apps/api/server.log
 
 # Node
